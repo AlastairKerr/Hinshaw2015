@@ -6,7 +6,14 @@ Title: Structural evidence for Scc4-dependent localization of cohesin loading
 Authors: Stephen Hinshaw, Vasso Makrantoni, Alastair Kerr, Adèle Marston, Stephen C. Harrison
 
 
-To  add: 
-scripts
-bedgraph files 
+To add: 
 GEO accession for raw data
+
+
+Files: 
+workflow1.sh       #details of the mapping process
+
+
+CENTROMERE.gff # location of the regions of interest
+EveryCen-boxplot.pl # perl script for prepping the data for R 
+plot-every-cen.r    # creatre R plots in paper
