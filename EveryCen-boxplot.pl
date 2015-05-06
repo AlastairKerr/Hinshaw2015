@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 use strict;
 
-open(A, "../../CENTROMERE.gff") or die "CENTROMERE.gff is required";
+open(A, "./CENTROMERE.gff") or die "CENTROMERE.gff is required";
 
 my %type;
 my %start;
