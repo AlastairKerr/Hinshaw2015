@@ -11,9 +11,12 @@ GEO accession for raw data
 
 
 Files: 
-workflow1.sh       #details of the mapping process
 
 
-CENTROMERE.gff # location of the regions of interest
+workflow1.sh        #details of the mapping process
+
+CENTROMERE.gff      # location of the regions of interest
+
 EveryCen-boxplot.pl # perl script for prepping the data for R 
-plot-every-cen.r    # creatre R plots in paper
+
+plot-every-cen.r    # create R plots in paper
