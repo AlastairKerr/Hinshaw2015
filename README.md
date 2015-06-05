@@ -5,7 +5,7 @@ Title: Structural evidence for Scc4-dependent localization of cohesin loading
 
 Authors: Stephen Hinshaw, Vasso Makrantoni, Alastair Kerr, Adèle Marston, Stephen C. Harrison
 
-DEO accession GSE68573
+GEO accession GSE68573
 
 
 
