@@ -1,5 +1,5 @@
 # Hindshaw2015
-Scripts for the Hinshaw et al 2015 paper
+# Scripts for the Hinshaw et al 2015 paper
 
 Title: Structural evidence for Scc4-dependent localization of cohesin loading
 
@@ -8,8 +8,20 @@ Authors: Stephen Hinshaw, Vasso Makrantoni, Alastair Kerr, Adèle Marston, Steph
 GEO accession GSE68573
 
 
+# Software Versions 
 
-Files: 
+Mapper: BWA Version: 0.6.1-r104
+
+Reference Genome: sacCer3
+
+Removal of duplicate reads: samtools Version: 0.1.16 (r963:234)
+
+RPM scaling, bedgraph creation and bed intersections: bedtools v2.16.2
+
+bedgraph to bigwig conversion: wigToBigWig v 4 (UCSC utilities)
+
+
+# Files: 
 
 
 workflow1.sh        #details of the mapping process
