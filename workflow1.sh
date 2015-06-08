@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #input is a fastq file '$1'
-export DB=/homes/genomes/s.cerevisiae/sacCer3/bwa_indexes/sacCer3
+export DB=~genomes/s.cerevisiae/sacCer3/bwa_indexes/sacCer3
 
 #bwa to align 
 echo "## Aligning using bwa" 
@@ -20,7 +20,7 @@ rm $2-info.bam
 
 #sort 
 echo "## sorting bam"
-samtools sort -m 500000000000  $2.bam $2-all
+samtools sort -@ 20 $2.bam $2-all
 
 
 
@@ -36,17 +36,10 @@ gzip -9 $2.sam &
 
 #remove rDNA region
 echo "## intersecting"
-bedtools intersect -v -abam $2-rmdup.bam -b ../rDNA.bed  > $2-rDNA-rmdup.bam
-bedtools intersect -v -abam $2-all.bam -b ../rDNA.bed  > $2-rDNA-all.bam
-
-#Info for rDNA alone
-#this was ignored as region nr saturated with reads
-echo "## generating coverage bed"
-bedtools coverage -abam $2-rmdup.bam -b rDNA.bed -d  > $2-rmdup-rDNA.bed
-
-#This used in figures 
-bedtools coverage -abam $2-all.bam -b rDNA.bed -d  > $2-all-rDNA.bed
-
+bedtools intersect -v -abam $2-rmdup.bam -b rDNA.bed  > $2-rDNA-rmdup.bam
+bedtools intersect -v -abam $2-all.bam -b rDNA.bed  > $2-rDNA-all.bam
+#Scale to reads per milion mapped reads (RPM)
+#bedgraph files used to to calculate reads over centromere
 num1=`samtools flagstat  $2-rDNA-all.bam | grep nan|grep mapped | grep nan |cut -f1 -d ' '` 
 num1b=`perl -e "print 1000000/$num1"` 
 genomeCoverageBed -ibam $2-rDNA-all.bam -bg -scale $num1b >  $2-rDNA-all.bg 
