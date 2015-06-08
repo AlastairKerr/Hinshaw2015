@@ -8,7 +8,7 @@ Authors: Stephen Hinshaw, Vasso Makrantoni, Alastair Kerr, Adèle Marston, Steph
 
 #GEO accession 
 
-GSE68573
+GSE68573  http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68573
 
 
 # Software Versions 
