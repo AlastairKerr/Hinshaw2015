@@ -1,4 +1,3 @@
-# Hindshaw2015
 # Scripts for the Hinshaw et al 2015 paper
 
 http://elifesciences.org/content/early/2015/06/03/eLife.06057
