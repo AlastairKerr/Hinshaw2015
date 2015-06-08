@@ -1,11 +1,15 @@
 # Hindshaw2015
 # Scripts for the Hinshaw et al 2015 paper
 
+http://elifesciences.org/content/early/2015/06/03/eLife.06057
+
 Title: Structural evidence for Scc4-dependent localization of cohesin loading
 
 Authors: Stephen Hinshaw, Vasso Makrantoni, Alastair Kerr, Adèle Marston, Stephen C. Harrison
 
-GEO accession GSE68573
+#GEO accession 
+
+GSE68573
 
 
 # Software Versions 
