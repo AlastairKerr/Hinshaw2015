@@ -31,6 +31,7 @@ plot-every-cen.r    # create R plots for each centromere
 
 
 AM15537_Scc1-6HA_2hrNocodazole_scc4-m35-rDNA-all.50k  # Two processed files, ChIP / input
+
 AM15537_Scc1-6HA_2hrNocodazole_scc4-m35-rDNA-all.50k # Two processed files, ChIP / input
 
 plot_median.r #Plots for figure 4 using these files  
