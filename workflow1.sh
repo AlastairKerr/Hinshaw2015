@@ -10,7 +10,7 @@ bwa mem -t 30 $DB $1  > $2.sam 2> $1.err
 
 
 #sam to bam
-echo "## Converting sam to bam, and remove unmapped reads" 
+echo "## Converting sam to bams" 
 samtools view -h -b -S -F 4 $2.sam > $2.bam
 samtools view -h -b -S  $2.sam > $2-info.bam
 
